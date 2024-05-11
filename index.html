@@ -28,6 +28,26 @@ listeners:
     type: mixed
     port: 42004
     proxy: 5
+  - name: mixed0
+    type: mixed
+    port: 42005
+    proxy: 6
+  - name: mixed1
+    type: mixed
+    port: 42006
+    proxy: 7
+  - name: mixed2
+    type: mixed
+    port: 42007
+    proxy: 8
+  - name: mixed3
+    type: mixed
+    port: 42008
+    proxy: 9
+  - name: mixed4
+    type: mixed
+    port: 42009
+    proxy: 10
 proxies:
   - name: 1
     server: gyc.kd69.vip
@@ -59,6 +79,36 @@ proxies:
     type: socks5
     username: USAD-0505-150-105
     password: ip-204.242.52.158
+  - name: 6
+    server: gyc.kd69.vip
+    port: 18758
+    type: socks5
+    username: SK-D304-us301-350-333
+    password: ip-134.195.158.76
+  - name: 7
+    server: gyc.kd69.vip
+    port: 18758
+    type: socks5
+    username: SK-D304-us301-350-334
+    password: ip-208.82.63.212
+  - name: 8
+    server: gyc.kd69.vip
+    port: 18758
+    type: socks5
+    username: SK-D304-us301-350-335
+    password: ip-134.195.158.76	
+  - name: 9
+    server: gyc.kd69.vip
+    port: 18758
+    type: socks5
+    username: SK-D304-us301-350-336
+    password: ip-208.82.63.212	
+  - name: 10
+    server: gyc.kd69.vip
+    port: 18758
+    type: socks5
+    username: SK-D304-us301-350-337
+    password: ip-134.195.159.210		
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -68,6 +118,11 @@ proxy-groups:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
   - name: 小红书
     type: select
     proxies:
@@ -76,6 +131,11 @@ proxy-groups:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
   - name: HelloWord
     type: select
     proxies:
@@ -84,6 +144,11 @@ proxy-groups:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
   - name: 电报消息
     type: select
     proxies:
@@ -92,6 +157,11 @@ proxy-groups:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
   - name: whats
     type: select
     proxies:
@@ -100,6 +170,11 @@ proxy-groups:
       - 3
       - 4
       - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
 rules:
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
